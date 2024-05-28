@@ -7,6 +7,7 @@ import { Card } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 
 import { tools } from "@/constants";
+import { lusitana } from "@/components/Font/font";
 
 export default function HomePage() {
   const router = useRouter();
@@ -14,10 +15,10 @@ export default function HomePage() {
   return (
     <div>
       <div className="mb-8 space-y-4">
-        <h2 className="text-2xl md:text-4xl font-bold text-center">
-          Explore the power of AI
+        <h2 className={cn("text-2xl md:text-4xl font-bold text-center",lusitana.className)}>
+          Explore The Power of AI
         </h2>
-        <p className="text-muted-foreground font-light text-sm md:text-lg text-center">
+        <p className={cn("text-muted-foreground font-light text-sm md:text-lg text-center",lusitana.className)}>
           Chat with the smartest AI - Experience the power of AI
         </p>
       </div>

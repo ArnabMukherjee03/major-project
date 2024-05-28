@@ -41,7 +41,7 @@ export async function GET() {
       line_items: [
         {
           price_data: {
-            currency: "INR",
+            currency: "USD",
             product_data: {
               name: "Smart Mind",
               description: "Unlimited AI Generations"

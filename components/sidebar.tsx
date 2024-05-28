@@ -65,14 +65,14 @@ export const Sidebar = ({
   const pathname = usePathname();
 
   return (
-    <div className="space-y-4 py-4 flex flex-col h-full bg-[#111827] text-white">
+    <div className="space-y-4 py-4 flex flex-col h-full shadow text-black">
       <div className="px-3 py-2 flex-1">
         <Link href="/dashboard" className="flex items-center pl-3 mb-14">
-          <div className="relative h-8 w-8 mr-4">
-            <Image fill alt="Logo" src="/logo.png" />
+          <div className="relative h-8 w-8 mr-2">
+            <Image fill alt="Logo" src="/SmartMind.png" />
           </div>
-          <h1 className={cn("text-2xl font-bold", poppins.className)}>
-            Smart Mind
+          <h1 className={cn("text-lg font-semibold")}>
+            Smart Mind.
           </h1>
         </Link>
         <div className="space-y-1">
@@ -81,8 +81,8 @@ export const Sidebar = ({
               key={route.href} 
               href={route.href}
               className={cn(
-                "text-sm group flex p-3 w-full justify-start font-medium cursor-pointer hover:text-white hover:bg-white/10 rounded-lg transition",
-                pathname === route.href ? "text-white bg-white/10" : "text-zinc-400",
+                "text-sm group flex p-3 w-full justify-start font-medium cursor-pointer hover:text-blue-500 hover:bg-white/10 rounded-lg transition",
+                pathname === route.href ? "text-blue-600 bg-accent" : "text-zinc-500",
               )}
             >
               <div className="flex items-center flex-1">

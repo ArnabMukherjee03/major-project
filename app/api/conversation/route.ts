@@ -43,6 +43,8 @@ export async function POST(
       messages
     });
 
+    console.log({response})
+
     if (!isPro) {
       await incrementApiLimit();
     }
